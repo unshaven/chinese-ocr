@@ -12,7 +12,7 @@ import keys
 from math import *
 import cv2
 GPU = False
-
+#将图片进行旋转
 def dumpRotateImage_(img,degree,pt1,pt2,pt3,pt4):
     height,width=img.shape[:2]
     heightNew = int(width * fabs(sin(radians(degree))) + height * fabs(cos(radians(degree))))
